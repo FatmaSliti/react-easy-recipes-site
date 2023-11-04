@@ -3,7 +3,6 @@ import styles from './Contact.module.css';
 const Contact = () => {
     return (
         <div className={styles.contact}>
-        
         <div className={styles['contact-container']}>
             <h1 className={styles.contactTitle}>Contact Us</h1>
             <p>Have a question or feedback? Feel free to get in touch with us!</p>
@@ -25,7 +24,6 @@ const Contact = () => {
             </form>
 
             <p>Alternatively, you can email us at <a href="mailto:fatmasliti289@gmail.com">fatmasliti@gmail.com</a></p>
-
             
         </div>
             <div className={styles.contactImage}>

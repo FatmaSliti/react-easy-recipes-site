@@ -1,25 +1,5 @@
-/* .header {
-    background-image: url('cooker.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -1350px;
-    color: #fff;
-    padding: 10rem;
-    text-align: center;
-}
-
-.header h1 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.section {
-    margin-bottom: 30px;
-    
-} */
-
 .header {
-    background-image: url('cooker.jpg');
+    background-image: url('../assets/cooker.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -1350px;

@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className={styles['about-container']}>
             <div className={styles['about-image']}>
-                <img src="about.jpg" alt="image" />
+                <img src="aboutt.jpg" alt="image" />
             </div>
             <div className={styles['about-text']}>
                 <h1>About Us</h1>

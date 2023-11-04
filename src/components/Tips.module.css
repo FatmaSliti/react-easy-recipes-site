@@ -1,0 +1,32 @@
+.tips {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.tipsTitle {
+    text-align: center;
+    color: #3498db;
+    margin-top: 50px;
+}
+
+.tips li {
+    list-style: none;
+    background-color: #ecf0f1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.tips li:hover {
+    background-color: #eae8e8;
+}

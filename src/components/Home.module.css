@@ -1,0 +1,77 @@
+/* .header {
+    background-image: url('cooker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -1350px;
+    color: #fff;
+    padding: 10rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    margin-bottom: 30px;
+    
+} */
+
+.header {
+    background-image: url('cooker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -1350px;
+    color: #fff;
+    padding: 10rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.Sectiontitle {
+    text-align: center;
+    margin: 80px;
+}
+
+.Sectiontitle p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.recipeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recipeItem {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.recipeItem h3 {
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+.recipeItem p {
+    color: #333;
+}

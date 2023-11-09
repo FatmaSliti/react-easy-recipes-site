@@ -6,11 +6,26 @@
     color: #fff;
     padding: 10rem;
     text-align: center;
+    position: relative;
+
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .header h1 {
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 800;
 }
 
 .section {
@@ -45,13 +60,67 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+
+    position: relative;
+
+    animation: animate-in 1s ease-out forwards;
+}
+
+.recipeItem1 {
+    background-image: url('../assets/spag.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+}
+
+.recipeItem2 {
+    background-image: url('../assets/chicken.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+.recipeItem3 {
+    background-image: url('../assets/vig.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+}
+
+.recipeItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .recipeItem h3 {
     font-size: 1.5rem;
     color: #3498db;
+    /* color: #ff6b6b; */
+    position: relative;
+    z-index: 5;
 }
 
 .recipeItem p {
-    color: #333;
+    /* color: #333; */
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes animate-in {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

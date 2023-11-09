@@ -29,7 +29,8 @@ const Home = () => {
                     </div>
                     <ul className={styles.recipeList}>
                         {recipes.map((recipe, index) => (
-                            <li key={index} className={styles.recipeItem}>
+                            // <li key={index} className={styles.recipeItem}>
+                            <li key={index} className={`${styles.recipeItem} ${styles['recipeItem' + (index + 1)]}`}>
                                 <h3>{recipe.title}</h3>
                                 <p>{recipe.description}</p>
                             </li>
@@ -37,7 +38,7 @@ const Home = () => {
                     </ul>
                 </section>
             </main>
-        </div>
+        </div >
     );
 };
 

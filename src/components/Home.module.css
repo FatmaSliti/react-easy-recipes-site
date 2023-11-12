@@ -1,3 +1,7 @@
+.home {
+min-height: 100vh;
+}
+
 .header {
     background-image: url('../assets/cooker.jpg');
     background-size: cover;

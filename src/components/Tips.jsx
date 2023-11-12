@@ -14,12 +14,12 @@ const Tips = () => {
     ];
 
     return (
-        <>
+        <div className={styles.tipsContainer}>
             <h2 className={styles.tipsTitle}>Cooking Tips</h2>
             <ul className={styles.tips}>
                 {cookingTips.map((tip, index) => <li key={index}>{tip}</li>)}
             </ul>
-        </>
+        </div>
     )
 }
 

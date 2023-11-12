@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 0 2rem;
     text-align: center;
+    min-height: 100vh;
 }
 
 .contact-container {
@@ -15,6 +16,11 @@
     max-width: 500px;
     /* margin: auto; */
     flex: 1;
+
+}
+
+.contact-container p {
+    margin-top: 10px;
 }
 
 .contactTitle {

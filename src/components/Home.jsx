@@ -17,7 +17,7 @@ const Home = () => {
     ];
 
     return (
-        <div>
+        <div className={styles.home}>
             <header className={styles.header}>
                 <h1>Welcome to Your Cooking Website</h1>
             </header>

@@ -1,0 +1,37 @@
+
+.list {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.listItem {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    margin: 10px;
+
+    background-color: #6a5acd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.area {
+    font-size: 1.2em;
+    color: #87CEEB;
+}
+
+.recipeBtn {
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}

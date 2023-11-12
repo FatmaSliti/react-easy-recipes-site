@@ -1,3 +1,7 @@
+.tipsContainer {
+    min-height: 100vh;
+}
+
 .tips {
     /* display: flex;
     align-items: center;

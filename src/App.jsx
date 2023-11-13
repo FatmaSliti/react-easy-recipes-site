@@ -19,7 +19,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/recipes", element: <Recipes />, },
-        { path: "/recipes/:id", element: <DetailsPage /> },
+        { path: "/recipes/:id", element: <DetailsPage />},
         { path: "tips", element: <Tips /> },
         { path: "about", element: <About /> },
         { path: "contact", element: <Contact /> },

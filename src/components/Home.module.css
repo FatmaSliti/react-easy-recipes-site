@@ -11,7 +11,6 @@ min-height: 100vh;
     padding: 10rem;
     text-align: center;
     position: relative;
-
 }
 
 .header::before {

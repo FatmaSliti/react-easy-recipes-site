@@ -9,7 +9,8 @@ import Contact from "./components/Contact";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import RecipesData from "./components/recipes/RecipesData";
-import DetailsPage from "./components/recipes/DetailsPage";
+import DetailsPage, { loader as detailsLoader } from "./components/recipes/DetailsPage";
+// import DetailsPage from "./components/recipes/DetailsPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,7 +20,8 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/recipes", element: <Recipes />, },
-        { path: "/recipes/:id", element: <DetailsPage />},
+        { path: "/recipes/:id", element: <Recipes />, loader: detailsLoader },
+        // { path: "/recipes/:id", element: <DetailsPage />, },
         { path: "tips", element: <Tips /> },
         { path: "about", element: <About /> },
         { path: "contact", element: <Contact /> },

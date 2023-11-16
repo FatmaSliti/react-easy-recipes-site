@@ -138,7 +138,7 @@ import { Link } from 'react-router-dom';
 
 function MainNavigation() {
     return (
-        <Navbar expand="lg" className="navbar navbar-expand-lg navbar-dark bg-primary" data-bs-theme="dark" >
+        <Navbar expand="lg" className="navbar navbar-expand-lg navbar-dark bg-primary " data-bs-theme="dark" >
             <Container fluid>
                 <Navbar.Brand as={Link} to="#">Easy Recipes</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

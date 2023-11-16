@@ -51,6 +51,12 @@
     font-size: 40px;
 }
 
+@media (max-width: 576px) {
+    .about-text h1 {
+        margin: 40px 0 30px;
+    }
+}
+
 .innertext {
     letter-spacing: 1px;
 }

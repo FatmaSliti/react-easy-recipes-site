@@ -14,6 +14,20 @@
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .tips {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .tips {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .tipsTitle {
     text-align: center;
     color: #3498db;

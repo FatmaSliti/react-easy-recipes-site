@@ -1,11 +1,15 @@
 .contact {
-    display: flex ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
     text-align: center;
     min-height: 100vh;
 }
+
+
 
 .contact-container {
     text-align: center;
@@ -24,7 +28,7 @@
 }
 
 .contactTitle {
-    /* font-style:oblique */
+    color: #3498db;
 }
 
 /* .contact-form {
@@ -79,4 +83,31 @@
 img {
     max-width: 80%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* margin: 0 20px; */
+    }
+
+    .contactImage {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .contact-container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipeList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -52,7 +52,7 @@ function RecipesData({ modalIsVisible }) {
             <ul className={styles.list}>
                 {data.slice(0, visibleMeals).map((item) => (
                     <li key={item.id} className={styles.listItem}>
-                        <Link to={`/recipes/${item.id}`}>
+                        <Link to={`/recipes/${item.id}`} style={{textDecoration: 'none'}}>
                             <div onClick={modalIsVisible}>
                                 <h1 className={styles.title}>{item.title}</h1>
                                 <h2 className={styles.area}>{item.area}</h2>

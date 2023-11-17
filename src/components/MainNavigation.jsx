@@ -10,7 +10,7 @@ import styles from './MainNavigation.module.css'
 function MainNavigation() {
     return (
         <div className={styles.navWrapper}>
-            <Navbar expand="lg" className={`navbar navbar-expand-lg navbar-dark bg-primary ${styles.navbar}`} data-bs-theme="dark" >
+            <Navbar expand="lg" className={`navbar navbar-expand-lg navbar-dark bg-primary fixed-top `} data-bs-theme="dark" >
                 <Container fluid>
                     <Navbar.Brand as={Link} to="#">Easy Recipes</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />

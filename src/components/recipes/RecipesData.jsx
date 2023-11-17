@@ -58,7 +58,7 @@ function RecipesData({ modalIsVisible }) {
                 ))}
             </ul>
             }
-            {visibleMeals < data.length && <button onClick={loadMore} type='submit' className={`btn btn-primary ${styles.recipeBtn}`}>Load More...</button>}
+            {visibleMeals < data.length && !isLoading && <button onClick={loadMore} type='submit' className={`btn btn-primary ${styles.recipeBtn}`}>Load More...</button>}
         </>
     )
 }

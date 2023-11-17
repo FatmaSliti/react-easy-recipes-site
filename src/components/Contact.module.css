@@ -81,6 +81,7 @@
 img {
     max-width: 80%;
     height: auto;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {

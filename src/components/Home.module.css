@@ -1,5 +1,6 @@
 .home {
-min-height: 100vh;
+    min-height: 100vh;
+    padding-top: 55px;
 }
 
 .header {
@@ -11,6 +12,12 @@ min-height: 100vh;
     padding: 10rem;
     text-align: center;
     position: relative;
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-position-y: -1350px;
+    }
 }
 
 .header::before {
@@ -62,8 +69,8 @@ min-height: 100vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 20px;
-        }
     }
+}
 
 
 @media (max-width: 576px) {

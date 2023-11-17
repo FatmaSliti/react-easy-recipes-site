@@ -66,9 +66,19 @@
     }
 } */
 
+.biggerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .tipsContainer {
     min-height: 100vh;
     padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tips {
@@ -97,6 +107,8 @@
     text-align: center;
     color: #3498db;
     margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 .tips li {

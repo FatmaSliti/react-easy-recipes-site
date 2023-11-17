@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import styles from './RecipesData.module.css'
 
 import { Link } from 'react-router-dom'
-import DetailsPage from "./DetailsPage";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -10,15 +9,16 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function RecipesData({ modalIsVisible }) {
     const [data, setData] = useState([]);
-    useState()
+    const [isLoading, setIsLoading] = useState(false);
 
     const [visibleMeals, setVisibleMeals] = useState(8);
 
     useEffect(() => {
         const fetchMeals = async () => {
+            setIsLoading(true);
             const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s`);
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
 
             const transformedData = data.meals.map(product => {
                 return {
@@ -28,6 +28,7 @@ function RecipesData({ modalIsVisible }) {
                 }
             })
             setData(transformedData);
+            setIsLoading(false);
         }
 
         fetchMeals();
@@ -39,7 +40,8 @@ function RecipesData({ modalIsVisible }) {
 
     return (
         <>
-            <ul className={styles.list}>
+            {isLoading && <p>Data is Loading...</p>}
+            {!isLoading && <ul className={styles.list}>
                 {data.slice(0, visibleMeals).map((item) => (
                     <li key={item.id} className={styles.listItem}>
                         <Link to={`/recipes/${item.id}`} style={{ textDecoration: 'none' }}>
@@ -55,6 +57,7 @@ function RecipesData({ modalIsVisible }) {
                     </li>
                 ))}
             </ul>
+            }
             {visibleMeals < data.length && <button onClick={loadMore} type='submit' className={`btn btn-primary ${styles.recipeBtn}`}>Load More...</button>}
         </>
     )

@@ -1,26 +1,47 @@
 import styles from './Tips.module.css'
+import { Container, Card, Row, Col } from 'react-bootstrap';
+
+import pan from '../assets/pan.jpg';
+import taste from '../assets/taste.jpg';
+import knife from '../assets/knife.jpg';
+
+const imageSources = [taste, knife, pan];
 
 const Tips = () => {
-
-    const cookingTips = [
-        "Taste as You Go: Taste your food throughout the cooking process and adjust the seasoning if needed. This ensures your dish is perfectly seasoned.",
-        "Master Basic Knife Skills: Learn basic knife skills like chopping, dicing, and mincing to make cooking more enjoyable and efficient.",
-        "Rest Meat: Allow cooked meat to rest before slicing. This helps the juices redistribute, resulting in juicier and more tender meat.",
-        "Balance Flavors: Achieve a balance of sweet, salty, sour, and savory flavors in your dishes to create a well-rounded taste.",
-        "Use Fresh Ingredients: Whenever possible, use fresh, seasonal ingredients for the best flavor and texture.",
-        "Organize Your Workspace: Keep your kitchen organized and clean while cooking to make the process more enjoyable and efficient.",
-        "Don't Crowd the Pan: Overcrowding the pan can lead to uneven cooking. Cook in batches if necessary.",
-        "Patience with Stir-Frying: When stir-frying, cook ingredients in small batches to maintain high heat and avoid steaming.",
+    const cookingTipsData = [
+        {
+            title: "Taste as You Go",
+            description: "Taste your food throughout the cooking process and adjust the seasoning if needed. This ensures your dish is perfectly seasoned."
+        },
+        {
+            title: "Master Basic Knife Skills",
+            description: "Learn basic knife skills like chopping, dicing, and mincing to make cooking more enjoyable and efficient."
+        },
+        {
+            title: "Don't Crowd the Pan",
+            description: "Don't Crowd the Pan. Overcrowding the pan can lead to uneven cooking. Cook in batches if necessary."
+        },
+        
     ];
 
     return (
-        <div className={styles.tipsContainer}>
+        <Container className={styles.tipsContainer}>
             <h2 className={styles.tipsTitle}>Cooking Tips</h2>
-            <ul className={styles.tips}>
-                {cookingTips.map((tip, index) => <li key={index}>{tip}</li>)}
-            </ul>
-        </div>
-    )
+            <Row className={styles.tips}>
+                {cookingTipsData.map((tip, index) => (
+                    <Col key={index} xs={12} md={6} lg={4}>
+                        <Card className={styles.tipCard}>
+                            <Card.Img variant="top" src={imageSources[index]} alt={`Tip ${index + 1}`} />
+                            <Card.Body>
+                                <Card.Title>{tip.title}</Card.Title>
+                                <Card.Text>{tip.description}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </Container>
+    );
 }
 
 export default Tips

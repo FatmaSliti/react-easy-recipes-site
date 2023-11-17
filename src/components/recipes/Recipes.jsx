@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import DetailsPage from './DetailsPage';
 import styles from './Recipes.module.css';
 import RecipesData from './RecipesData';
-import Modal from '../../UI/Modal';
 
 function Recipes() {
     const [modalIsVisible, setModalIsVisible] = useState(false)

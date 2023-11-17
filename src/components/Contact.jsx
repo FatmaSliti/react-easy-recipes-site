@@ -27,7 +27,7 @@ const Contact = () => {
             
         </div>
             <div className={styles.contactImage}>
-                <img src="contactUs.jpg" alt="image" />
+                <img src="contactUs.jpg" alt="image"  className={styles.contactImage}/>
             </div>
         </div>
     );

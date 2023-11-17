@@ -9,7 +9,6 @@
     text-align: center;
 
     min-height: 100vh;
-    /* padding-top: 55px; */
 }
 
 .about-image {
@@ -30,12 +29,6 @@
     }
 }
 
-/* @media (max-width: 576px) {
-    .tips {
-        
-    }
-} */
-
 .about-text {
     flex: 2;
     text-align: center;
@@ -47,7 +40,7 @@
 
 .about-text h1 {
     color: #3498db;
-    margin: 0 0 30px;
+    margin: 30px 0 30px;
     font-size: 40px;
 }
 

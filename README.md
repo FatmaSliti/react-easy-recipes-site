@@ -1,4 +1,4 @@
-# Easy recipe (still working on it)
+# Easy recipe 
 
 Check out the live demo of Easy Recipe here: [Demo](https://react-easy-recipe-site.vercel.app/)
 

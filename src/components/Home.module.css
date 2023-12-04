@@ -72,7 +72,6 @@
     }
 }
 
-
 @media (max-width: 576px) {
     .recipeList {
         display: grid;
@@ -91,27 +90,25 @@
 
     animation: animate-in 1s ease-out forwards;
     cursor: pointer;
+    
 }
 
 .recipeItem1 {
     background-image: url('../assets/spag.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-y: -50px; */
 }
 
 .recipeItem2 {
     background-image: url('../assets/chicken.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-y: -150px; */
 }
 
 .recipeItem3 {
     background-image: url('../assets/vig.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position-y: -50px; */
 }
 
 .recipeItem::before {
@@ -128,13 +125,11 @@
 .recipeItem h3 {
     font-size: 1.5rem;
     color: #3498db;
-    /* color: #ff6b6b; */
     position: relative;
     z-index: 5;
 }
 
 .recipeItem p {
-    /* color: #333; */
     color: white;
     position: relative;
     z-index: 5;

@@ -39,7 +39,6 @@ const Home = () => {
                         ))}
                     </ul>
                 </section>
-                <MapComponent />
             </main>
         </div >
     );

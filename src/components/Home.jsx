@@ -1,5 +1,4 @@
 import styles from './Home.module.css';
-import MapComponent from './MapComponent';
 
 const Home = () => {
     const recipes = [
